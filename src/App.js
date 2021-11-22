@@ -18,7 +18,11 @@ export default function App() {
           </div>
         </div>
       </div>
-      <a href="https://github.com/Kim-Murray/React-Weather-App" target="_blank">
+      <a
+        href="https://github.com/Kim-Murray/React-Weather-App"
+        target="_blank"
+        rel="noreferrer"
+      >
         Open-source code
       </a>{" "}
       by Kim Murray
