@@ -1,0 +1,32 @@
+.current-weather .today-card {
+  text-align: center;
+  padding: 10px 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.current-weather .card-title-top {
+  margin-bottom: 0;
+}
+
+.current-weather .today-T-text {
+  margin: 0;
+}
+
+.current-weather .today-T {
+  font-size: 40px;
+}
+
+.current-weather .humidity-wind {
+  font-size: 12px;
+}
+
+.current-weather .today-icon {
+  text-align: center;
+  margin: 10px;
+  font-size: 50px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  border-radius: 50%;
+}
