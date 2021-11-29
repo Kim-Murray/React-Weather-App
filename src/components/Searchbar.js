@@ -12,7 +12,7 @@ export default function Searchbar() {
               placeholder="Enter a location... (eg Paris)"
               className="form-control"
               id="location"
-              autocomplete="off"
+              autoComplete="off"
             />
           </div>
           <div className="col-2">
