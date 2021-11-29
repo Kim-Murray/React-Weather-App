@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Searchbar() {
+export default function Searchbar(props) {
+  const [city, setCity] = useState(props.defaultCity);
+
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    props.searchCity(city);
+  }
+
   return (
     <div className="Searchbar">
-      <form id="search-city">
+      <form id="search-city" onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-2"></div>
           <div className="col-6">
@@ -13,6 +24,7 @@ export default function Searchbar() {
               className="form-control"
               id="location"
               autoComplete="off"
+              onChange={updateCity}
             />
           </div>
           <div className="col-2">

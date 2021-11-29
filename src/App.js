@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Searchbar from "./components/Searchbar";
 import Predictions from "./components/Predictions";
 import CurrentWeather from "./components/CurrentWeather";
@@ -6,14 +6,16 @@ import CurrentWeather from "./components/CurrentWeather";
 import "./styles/App.css";
 
 export default function App() {
+  const [city, setCity] = useState("New York");
+
   return (
     <div className="page">
       <div className="app">
         <div className="container">
-          <Searchbar />
+          <Searchbar searchCity={(city) => setCity(city)} />
           <br />
           <div className="row">
-            <CurrentWeather cityName="New York" />
+            <CurrentWeather cityName={city} />
             <Predictions />
           </div>
         </div>
