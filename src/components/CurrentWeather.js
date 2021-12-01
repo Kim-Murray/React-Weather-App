@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CurrentDate from "./CurrentDate";
+import DisplayTemperature from "./DisplayTemperature";
 
 import "../styles/CurrentWeather.css";
 
@@ -48,9 +49,11 @@ export default function Test(props) {
             </div>
             <div className="today-T-text">
               <div className="today-T" id="current-T">
-                {currentWeather.temperature}°C
+                <DisplayTemperature celcius={currentWeather.temperature} />
               </div>
-              <span id="description">{currentWeather.description}</span>
+              <span className="text-capitalize" id="description">
+                {currentWeather.description}
+              </span>
             </div>
             <img
               id="today-icon"
