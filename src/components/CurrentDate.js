@@ -24,7 +24,7 @@ export default function CurrentDate(props) {
     hours: addZero(props.currentDate.getHours()),
     minutes: addZero(props.currentDate.getMinutes()),
   };
-  console.log(date.hours);
+
   return (
     <span>
       {" "}
