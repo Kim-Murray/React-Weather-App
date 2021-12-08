@@ -9,17 +9,6 @@
   padding-bottom: 4px;
 }
 
-.predictions-day .prediction-icon {
-  text-align: center;
-  margin: 4px;
-  font-size: 50px;
-  overflow: hidden;
-  width: 100px;
-  height: 100px;
-  border: 2px solid;
-  border-radius: 50%;
-}
-
 .predictions-day .min-temp {
   color: rgba(0, 0, 0, 0.6);
 }

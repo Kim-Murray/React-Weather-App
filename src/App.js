@@ -18,7 +18,7 @@ export default function App() {
       date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
-      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       coords: response.data.coord,

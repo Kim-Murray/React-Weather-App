@@ -1,6 +1,7 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
 import DisplayTemperature from "./DisplayTemperature";
+import Icon from "./Icon";
 
 import "../styles/CurrentWeather.css";
 
@@ -26,11 +27,11 @@ export default function CurrentWeather(props) {
               {props.weather.description}
             </span>
           </div>
-          <img
-            id="today-icon"
-            className="today-icon"
-            src={props.weather.icon}
-            alt={props.weather.description}
+          <Icon
+            code={props.weather.icon}
+            temp={props.weather.temperature}
+            description={props.weather.description}
+            type="today-icon"
           />
           <div className="humidity-wind">
             Wind: {props.weather.wind} m/s

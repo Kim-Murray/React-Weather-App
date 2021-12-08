@@ -1,0 +1,40 @@
+.icon .today-icon {
+  text-align: center;
+  margin: 10px;
+  font-size: 50px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.icon .prediction-icon {
+  text-align: center;
+  margin: 4px;
+  font-size: 50px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.icon .min-temp {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.icon .warm {
+  border-color: rgba(253, 192, 85);
+  background-color: rgba(253, 192, 85, 0.7);
+}
+
+.icon .mild {
+  border-color: rgb(109, 189, 155);
+  background-color: rgba(109, 189, 155, 0.7);
+}
+
+.icon .cold {
+  border-color: rgb(63, 114, 172);
+  background-color: rgb(63, 114, 172, 0.7);
+}
