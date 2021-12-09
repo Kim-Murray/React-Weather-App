@@ -4,11 +4,6 @@ import Icon from "./Icon";
 import "../styles/PredictionDay.css";
 
 export default function PredictionsDay(props) {
-  console.log(`This is the data ${props.data}`);
-
-  const icon = props.data.weather[0].icon;
-  const maxTemp = Math.round(props.data.temp.max);
-
   function getDay() {
     let date = new Date(props.data.dt * 1000);
     let day = date.getDay();
@@ -24,6 +19,10 @@ export default function PredictionsDay(props) {
     return days[day];
   }
 
+  function icon() {
+    return props.data.weather[0].icon;
+  }
+
   function minTemperature() {
     return Math.round(props.data.temp.min);
   }
@@ -37,8 +36,8 @@ export default function PredictionsDay(props) {
       <div className="col prediction">
         <h2 className="future-day">{getDay()}</h2>
         <Icon
-          code={icon}
-          temp={maxTemp}
+          code={icon()}
+          temp={maxTemperature()}
           discription="weather icon"
           type={"prediction-icon"}
         />

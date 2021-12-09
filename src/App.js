@@ -11,8 +11,6 @@ export default function App() {
   const [currentWeather, setCurrentWeather] = useState({ ready: false });
 
   function getWeatherInfo(response) {
-    console.log(response.data);
-
     setCurrentWeather({
       ready: true,
       date: new Date(response.data.dt * 1000),
@@ -26,7 +24,6 @@ export default function App() {
   }
 
   useEffect(() => {
-    console.log("running axios");
     let apiKey = "8592322f23646cdf44bbdae2ec743ec1";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 

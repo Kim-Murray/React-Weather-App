@@ -8,11 +8,8 @@ export default function Predictions(props) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
 
-  console.log(props.coords);
   const latitude = props.coords.lat;
   const longitude = props.coords.lon;
-  console.log(latitude);
-  console.log(longitude);
 
   function getForecast(response) {
     setForecast(response.data.daily);
@@ -38,6 +35,8 @@ export default function Predictions(props) {
                     <PredictionDay data={dailyForecast} />
                   </div>
                 );
+              } else {
+                return null;
               }
             })}
           </div>
