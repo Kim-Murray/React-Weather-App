@@ -7,7 +7,7 @@ import axios from "axios";
 import "./styles/App.css";
 
 export default function App() {
-  const [city, setCity] = useState("New York");
+  const [city, setCity] = useState("London");
   const [currentWeather, setCurrentWeather] = useState({ ready: false });
 
   function getWeatherInfo(response) {
