@@ -1,6 +1,5 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
-import DisplayTemperature from "./DisplayTemperature";
 import Icon from "./Icon";
 
 import "../styles/CurrentWeather.css";
@@ -21,7 +20,7 @@ export default function CurrentWeather(props) {
           </div>
           <div className="today-T-text">
             <div className="today-T" id="current-T">
-              <DisplayTemperature celcius={props.weather.temperature} />
+              {props.weather.temperature}°C
             </div>
             <span className="text-capitalize" id="description">
               {props.weather.description}
