@@ -12,6 +12,14 @@ export default function Searchbar(props) {
     props.searchCity(city);
   }
 
+  function getCoords(position) {
+    props.searchLocal(position.coords);
+  }
+
+  function getLocalWeather() {
+    navigator.geolocation.getCurrentPosition(getCoords);
+  }
+
   return (
     <div className="Searchbar">
       <form id="search-city" onSubmit={handleSubmit}>
@@ -31,7 +39,11 @@ export default function Searchbar(props) {
             <input type="submit" className="btn btn-success" value="Submit" />
           </div>
           <div className="col-2">
-            <button className="btn btn-secondary" id="local-weather">
+            <button
+              className="btn btn-secondary"
+              id="local-weather"
+              onClick={getLocalWeather}
+            >
               Local
             </button>
           </div>

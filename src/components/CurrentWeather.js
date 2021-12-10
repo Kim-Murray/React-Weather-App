@@ -10,7 +10,7 @@ export default function CurrentWeather(props) {
       <div className="card border-0" style={{ width: "14rem" }}>
         <div className="card-body today-card">
           <div className="card-title card-title-top">
-            <h1>{props.cityName}</h1>
+            <h1>{props.weather.name}</h1>
             <h2>
               Last updated:
               <span id="current-day-time">
