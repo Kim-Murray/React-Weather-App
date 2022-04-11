@@ -33,13 +33,14 @@ export default function PredictionsDay(props) {
 
   return (
     <div className="predictions-day">
-      <div className="col prediction">
+      <div className="prediction">
         <h2 className="future-day">{getDay()}</h2>
         <Icon
           code={icon()}
           temp={maxTemperature()}
           discription="weather icon"
           type={"prediction-icon"}
+          className="prediction-icon"
         />
         <h4>
           <span className="min-temp">{minTemperature()}°C/</span>

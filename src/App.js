@@ -51,13 +51,13 @@ export default function App() {
               searchLocal={(location) => setLocation(location)}
             />
             <br />
-            <div className="row">
+            <div className="weather">
               <CurrentWeather weather={currentWeather} />
               <Predictions coords={currentWeather.coords} />
             </div>
           </div>
         </div>
-        <footer>
+        <footer className="footer">
           <a
             href="https://github.com/Kim-Murray/React-Weather-App"
             target="_blank"

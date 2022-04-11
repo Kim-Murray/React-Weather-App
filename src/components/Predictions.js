@@ -25,21 +25,19 @@ export default function Predictions(props) {
 
   if (loaded) {
     return (
-      <div className="col-8  predictions">
-        <div className="prediction-wrapper">
-          <div className="row" id="forecast">
-            {forecast.map(function (dailyForecast, index) {
-              if (index < 6) {
-                return (
-                  <div className="col" key={index}>
-                    <PredictionDay data={dailyForecast} />
-                  </div>
-                );
-              } else {
-                return null;
-              }
-            })}
-          </div>
+      <div className="predictions">
+        <div className="prediction-wrapper" id="forecast">
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 6) {
+              return (
+                <div key={index}>
+                  <PredictionDay data={dailyForecast} />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
         </div>
       </div>
     );

@@ -1,21 +1,29 @@
-.current-weather .today-card {
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  width: 20rem;
   padding: 1rem 0.5rem;
+  background-color: white;
   border: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-.current-weather .card-title-top {
-  margin-bottom: 0;
-}
-
-.current-weather .today-T-text {
-  margin: 0;
 }
 
 .current-weather .today-T {
   font-size: 4rem;
 }
 
+.current-weather .description {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.current-weather .today-icon {
+  margin-top: 0.5rem;
+}
+
 .current-weather .humidity-wind {
   font-size: 1.2rem;
+  padding: 0.8rem 0;
 }

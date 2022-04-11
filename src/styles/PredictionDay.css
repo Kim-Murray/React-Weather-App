@@ -12,3 +12,7 @@
 .predictions-day .min-temp {
   color: rgba(0, 0, 0, 0.6);
 }
+
+.predictions-day .prediction-icon {
+  margin: 0.2rem 1rem;
+}

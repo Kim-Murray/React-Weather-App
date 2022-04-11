@@ -23,10 +23,19 @@ h2 {
 }
 
 h4 {
-  font-size: smaller;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
 small {
   display: block;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  font-size: 1.6rem;
 }

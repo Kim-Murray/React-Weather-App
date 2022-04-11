@@ -1,3 +1,10 @@
+.predictions {
+  flex: 0 0 70%;
+}
+
 .predictions .prediction-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 0.8rem;
 }
