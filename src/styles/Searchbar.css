@@ -1,0 +1,56 @@
+.searchbar-form {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+}
+
+.searchbar-input-text {
+  flex: 0 0 70%;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
+
+.searchbar-input-text:focus {
+  border: none;
+  outline: 0.2rem solid rgba(0, 0, 0, 0.2);
+  outline-color: rgba(253, 192, 85, 0.7);
+}
+
+.searchbar-btn {
+  color: white;
+  width: 8rem;
+  height: 4rem;
+  border: 1px solid;
+  border-radius: 0.3rem;
+  transition: all 0.1s;
+}
+
+.searchbar-btn:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.searchbar-btn:active {
+  transform: translateY(-0.5px);
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.searchbar-btn-submit {
+  background-color: rgb(109, 189, 155);
+  border-color: rgb(109, 189, 155);
+}
+
+.searchbar-btn-submit:hover {
+  background-color: rgba(109, 189, 155, 0.8);
+}
+
+.searchbar-btn-local {
+  background-color: rgb(236, 110, 76);
+  border-color: rgb(236, 110, 76);
+}
+
+.searchbar-btn-local:hover {
+  background-color: rgba(236, 110, 76, 0.8);
+}

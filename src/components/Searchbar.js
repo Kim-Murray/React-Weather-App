@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "../styles/Searchbar.css";
+
 export default function Searchbar(props) {
   const [city, setCity] = useState(props.defaultCity);
 
@@ -21,32 +23,31 @@ export default function Searchbar(props) {
   }
 
   return (
-    <div className="Searchbar">
+    <div className="searchbar">
       <form id="search-city" onSubmit={handleSubmit}>
-        <div className="row">
-          <div className="col-2"></div>
-          <div className="col-6">
-            <input
-              type="text"
-              placeholder="Enter a location... (eg Paris)"
-              className="form-control"
-              id="location"
-              autoComplete="off"
-              onChange={updateCity}
-            />
-          </div>
-          <div className="col-2">
-            <input type="submit" className="btn btn-success" value="Submit" />
-          </div>
-          <div className="col-2">
-            <button
-              className="btn btn-secondary"
-              id="local-weather"
-              onClick={getLocalWeather}
-            >
-              Local
-            </button>
-          </div>
+        <div className="searchbar-form">
+          <input
+            type="text"
+            placeholder="Enter a location... (eg Paris)"
+            className="searchbar-input-text"
+            id="location"
+            autoComplete="off"
+            onChange={updateCity}
+          />
+
+          <input
+            type="submit"
+            className="searchbar-btn searchbar-btn-submit"
+            value="Submit"
+          />
+
+          <button
+            className="searchbar-btn searchbar-btn-local"
+            id="local-weather"
+            onClick={getLocalWeather}
+          >
+            Local
+          </button>
         </div>
       </form>
     </div>

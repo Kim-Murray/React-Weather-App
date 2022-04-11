@@ -1,6 +1,6 @@
 .current-weather .today-card {
   text-align: center;
-  padding: 10px 5px;
+  padding: 1rem 0.5rem;
   border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -13,9 +13,9 @@
 }
 
 .current-weather .today-T {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .current-weather .humidity-wind {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
