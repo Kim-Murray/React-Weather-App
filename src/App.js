@@ -52,8 +52,12 @@ export default function App() {
             />
             <br />
             <div className="weather">
-              <CurrentWeather weather={currentWeather} />
-              <Predictions coords={currentWeather.coords} />
+              <div className="weather-current">
+                <CurrentWeather weather={currentWeather} />
+              </div>
+              <div className="weather-predictions">
+                <Predictions coords={currentWeather.coords} />
+              </div>
             </div>
           </div>
         </div>

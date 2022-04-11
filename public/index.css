@@ -1,0 +1,9 @@
+:root {
+  --extra-large: 57em;
+}
+
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 50%;
+  }
+}
