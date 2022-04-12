@@ -28,7 +28,7 @@ export default function Searchbar(props) {
         <div className="searchbar-form">
           <input
             type="text"
-            placeholder="Enter a location... (eg Paris)"
+            placeholder="Enter a city... (eg Paris)"
             className="searchbar-input-text"
             id="location"
             autoComplete="off"
