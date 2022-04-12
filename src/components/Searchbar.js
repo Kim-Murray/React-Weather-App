@@ -35,19 +35,19 @@ export default function Searchbar(props) {
             onChange={updateCity}
           />
 
-          <input
-            type="submit"
-            className="searchbar-btn searchbar-btn-submit"
-            value="Submit"
-          />
+          <div className="searchbar-btns-smallscreen">
+            <button className="searchbar-btn searchbar-btn-submit">
+              Search
+            </button>
 
-          <button
-            className="searchbar-btn searchbar-btn-local"
-            id="local-weather"
-            onClick={getLocalWeather}
-          >
-            Local
-          </button>
+            <button
+              className="searchbar-btn searchbar-btn-local"
+              id="local-weather"
+              onClick={getLocalWeather}
+            >
+              Local
+            </button>
+          </div>
         </div>
       </form>
     </div>

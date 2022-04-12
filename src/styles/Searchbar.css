@@ -37,6 +37,10 @@
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
+.searchbar-btn:not(:last-child) {
+  margin-right: 0.4rem;
+}
+
 .searchbar-btn-submit {
   background-color: rgb(109, 189, 155);
   border-color: rgb(109, 189, 155);
@@ -53,4 +57,24 @@
 
 .searchbar-btn-local:hover {
   background-color: rgba(236, 110, 76, 0.8);
+}
+
+@media only screen and (max-width: 770px) {
+  .searchbar-form {
+    flex-direction: column;
+    font-size: 1.6rem;
+  }
+
+  .searchbar-input-text {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .searchbar-btns-smallscreen {
+    display: flex;
+  }
+
+  .searchbar-btn {
+    flex: 1;
+  }
 }
