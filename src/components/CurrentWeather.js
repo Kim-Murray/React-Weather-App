@@ -10,7 +10,7 @@ export default function CurrentWeather(props) {
       <div className="current-weather-horizontal">
         <div className="current-weather-horizontal-city">
           <h1 className="current-weather-city">{props.weather.name}</h1>
-          <h2>
+          <h2 className="current-weather-updated">
             Last updated:
             <span id="current-day-time">
               <CurrentDate currentDate={props.weather.date} />

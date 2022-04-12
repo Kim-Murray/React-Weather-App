@@ -46,6 +46,10 @@
     margin-bottom: 1rem;
   }
 
+  .current-weather-updated {
+    font-size: 1.1rem;
+  }
+
   .current-weather .today-T {
     font-size: 5rem;
   }
