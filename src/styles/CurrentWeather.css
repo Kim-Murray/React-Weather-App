@@ -7,7 +7,8 @@
   width: 20rem;
   padding: 1rem 0.5rem;
   background-color: white;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
 }
 
 .current-weather .today-T {
@@ -32,8 +33,6 @@
   .current-weather {
     width: 70vw;
     padding: 1rem 0.5rem;
-    background-color: white;
-    border: 2px solid rgba(0, 0, 0, 0.2);
   }
   .current-weather-horizontal {
     width: 70vw;
@@ -54,10 +53,58 @@
 
 @media only screen and (max-width: 700px) {
   .current-weather {
+    width: 75vw;
+  }
+
+  .current-weather-horizontal {
+    width: 75vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .current-weather {
     width: 80vw;
   }
 
   .current-weather-horizontal {
     width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .current-weather {
+    width: 85vw;
+  }
+
+  .current-weather-horizontal {
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .current-weather {
+    width: 90vw;
+  }
+
+  .current-weather-horizontal {
+    width: 90vw;
+  }
+
+  .current-weather-city {
+    font-size: 3.5rem;
+  }
+
+  .current-weather .today-T {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .current-weather {
+    width: 95vw;
+  }
+
+  .current-weather-horizontal {
+    width: 95vw;
   }
 }

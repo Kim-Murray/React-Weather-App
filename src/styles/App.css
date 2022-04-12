@@ -7,7 +7,7 @@
 .app {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.4rem;
-  padding: 1rem 0.5rem 1rem 1.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
   margin-top: 2rem;
   background-color: rgb(241, 244, 245);
 }
@@ -47,5 +47,12 @@ small {
 
   .weather-current {
     margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .app {
+    border: none;
+    margin-top: 0;
   }
 }
